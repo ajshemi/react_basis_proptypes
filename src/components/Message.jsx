@@ -29,7 +29,7 @@ class Message extends React.Component {
 
     return (
       <div>
-        <h3>
+        <h3 style={{ border: "2px solid red" }}>
           My name is {name}, I am {age} old and I love playing {sport}{" "}
         </h3>
         <div>{children}</div>

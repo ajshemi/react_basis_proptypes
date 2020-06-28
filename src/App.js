@@ -2,7 +2,7 @@ import React from "react"; //write javascript as it were html
 // import logo from './logo.svg';
 import "./App.css";
 import Message from "./components/Message";
-import Student from "./components/Student";
+import Subject from "./components/Subject";
 
 //functional component like turn jsonToHtml
 //Message used below is an instance of message class
@@ -12,10 +12,9 @@ function App() {
   return (
     <div className="App">
       <Message name={"Paul"} age={12} sport={"Soccer"}>
-        <Student name="Mark" age={24} />
-        <Student name="Peter" age={25} />
+        <Subject subjects={["Geometry", "Trigonometry", "Literature"]} />
       </Message>
-      <Message />
+      {/* <Message name={"Paul"} age={12} sport={"Soccer"}/> */}
     </div>
   );
 }
